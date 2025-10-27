@@ -1,0 +1,359 @@
+
+
+╔==============================================================================╗
+║                    PLO MASTERY SUITE - ANALYSIS DEMO                         ║
+║                    Leak Detection & GTO Comparison                           ║
+╚==============================================================================╝
+
+================================================================================
+  DEMO 1: GTO COMPARISON
+================================================================================
+
+Analyzing player with 20 stats...
+Sample size: 250 hands
+
+✓ Compared 20 statistics
+✓ Found 14 medium+ severity leaks
+
+--------------------------------------------------------------------------------
+TOP 5 LEAKS:
+--------------------------------------------------------------------------------
+
+1. Fold vs 3-Bet OOP [MEDIUM]
+   Your Value:     66.0%
+   GTO Baseline:   58.0%
+   Deviation:      +8.0% (over)
+   EV Loss:      1.20 BB/100
+   Total Loss:   12.0 BB over 1000 hands
+
+2. C-Bet Flop [MEDIUM]
+   Your Value:     52.0%
+   GTO Baseline:   60.0%
+   Deviation:      -8.0% (under)
+   EV Loss:      1.20 BB/100
+   Total Loss:   12.0 BB over 1000 hands
+
+3. Double Barrel [MEDIUM]
+   Your Value:     42.0%
+   GTO Baseline:   50.0%
+   Deviation:      -8.0% (under)
+   EV Loss:      1.20 BB/100
+   Total Loss:   12.0 BB over 1000 hands
+
+4. Fold vs C-Bet Flop [MEDIUM]
+   Your Value:     50.0%
+   GTO Baseline:   42.0%
+   Deviation:      +8.0% (over)
+   EV Loss:      1.20 BB/100
+   Total Loss:   12.0 BB over 1000 hands
+
+5. VPIP [HIGH]
+   Your Value:     32.5%
+   GTO Baseline:   25.0%
+   Deviation:      +7.5% (over)
+   EV Loss:      1.12 BB/100
+   Total Loss:   11.2 BB over 1000 hands
+
+--------------------------------------------------------------------------------
+TOP 3 STRENGTHS (Stats closest to GTO):
+--------------------------------------------------------------------------------
+
+1. W$SD
+   Your Value:     49.0%
+   GTO Baseline:   50.0%
+   Deviation:      -1.0%
+
+2. 4-Bet
+   Your Value:     10.0%
+   GTO Baseline:   12.0%
+   Deviation:      -2.0%
+
+3. PFR
+   Your Value:     17.0%
+   GTO Baseline:   20.0%
+   Deviation:      -3.0%
+
+--------------------------------------------------------------------------------
+OVERALL SUMMARY:
+--------------------------------------------------------------------------------
+Overall Score:        30.0%
+Stats within range:   6/20
+Total leaks:          14
+Critical leaks:       0
+High leaks:           1
+Medium leaks:         13
+Reliable sample:      YES
+
+================================================================================
+  DEMO 2: LEAK DETECTION & TRACKING
+================================================================================
+
+Detecting leaks in current session...
+✓ Total leaks detected: 14
+✓ Categorized by: 3 categories
+✓ Generated 5 recommendations
+
+--------------------------------------------------------------------------------
+LEAKS BY CATEGORY:
+--------------------------------------------------------------------------------
+preflop                  : 5 leaks
+postflop_aggression      : 5 leaks
+postflop_defense         : 4 leaks
+
+--------------------------------------------------------------------------------
+TOP 5 PRIORITY LEAKS (by priority score):
+--------------------------------------------------------------------------------
+
+1. VPIP - HIGH
+   Priority Score:   2.17/4.0
+   Your Value:         32.5%
+   GTO Baseline:       25.0%
+   Deviation:          +7.5%
+   EV Loss:          1.12 BB/100
+
+2. Fold vs 3-Bet OOP - MEDIUM
+   Priority Score:   1.78/4.0
+   Your Value:         66.0%
+   GTO Baseline:       58.0%
+   Deviation:          +8.0%
+   EV Loss:          1.20 BB/100
+
+3. Fold vs 3-Bet - MEDIUM
+   Priority Score:   1.76/4.0
+   Your Value:         62.0%
+   GTO Baseline:       55.0%
+   Deviation:          +7.0%
+   EV Loss:          1.05 BB/100
+
+4. Fold vs 3-Bet IP - MEDIUM
+   Priority Score:   1.74/4.0
+   Your Value:         58.0%
+   GTO Baseline:       52.0%
+   Deviation:          +6.0%
+   EV Loss:          0.90 BB/100
+
+5. C-Bet Flop - MEDIUM
+   Priority Score:   1.68/4.0
+   Your Value:         52.0%
+   GTO Baseline:       60.0%
+   Deviation:          -8.0%
+   EV Loss:          1.20 BB/100
+
+--------------------------------------------------------------------------------
+ACTION RECOMMENDATIONS:
+--------------------------------------------------------------------------------
+
+1. VPIP [HIGH]
+   Tighten starting hand ranges. Review hand selection charts for your position.
+   EV Impact: 1.12 BB/100
+
+2. Fold vs 3-Bet OOP [MEDIUM]
+   Tighten OOP defense vs 3-bets. Position disadvantage requires more discipline.
+   EV Impact: 1.20 BB/100
+
+3. Fold vs 3-Bet [MEDIUM]
+   Review your 3-bet calling ranges. May be calling too wide or folding too much.
+   EV Impact: 1.05 BB/100
+
+4. Fold vs 3-Bet IP [MEDIUM]
+   Optimize IP defense vs 3-bets. Can defend wider in position.
+   EV Impact: 0.90 BB/100
+
+5. C-Bet Flop [MEDIUM]
+   Optimize flop c-bet frequency based on board texture and position.
+   EV Impact: 1.20 BB/100
+
+================================================================================
+  DEMO 3: PERSONALIZED STUDY PLAN
+================================================================================
+
+Generating study plan with 3 focus areas...
+✓ Created study plan
+✓ Focus areas: 3
+✓ Total estimated time: 7.0 hours
+
+--------------------------------------------------------------------------------
+STUDY PLAN:
+--------------------------------------------------------------------------------
+
+FOCUS AREA #1: VPIP
+Severity: HIGH | Priority: 2.17
+Estimated Study Time: 180 minutes (3.0 hours)
+
+Tasks:
+  1. Review VPIP ranges in GTO trainer
+  2. Study hand charts for 6-max PLO
+  3. Review 10 hands where you deviated from optimal range
+  4. Practice range quiz for this situation
+  5. PRIORITY: Schedule coaching session to review this leak
+  6. Add this spot to daily drill routine
+
+FOCUS AREA #2: Fold vs 3-Bet OOP
+Severity: MEDIUM | Priority: 1.78
+Estimated Study Time: 120 minutes (2.0 hours)
+
+Tasks:
+  1. Review Fold vs 3-Bet OOP ranges in GTO trainer
+  2. Study hand charts for 6-max PLO
+  3. Review 10 hands where you deviated from optimal range
+  4. Practice range quiz for this situation
+
+FOCUS AREA #3: Fold vs 3-Bet
+Severity: MEDIUM | Priority: 1.76
+Estimated Study Time: 120 minutes (2.0 hours)
+
+Tasks:
+  1. Review Fold vs 3-Bet ranges in GTO trainer
+  2. Study hand charts for 6-max PLO
+  3. Review 10 hands where you deviated from optimal range
+  4. Practice range quiz for this situation
+
+--------------------------------------------------------------------------------
+TOTAL STUDY TIME: 7.0 hours
+--------------------------------------------------------------------------------
+
+================================================================================
+  DEMO 4: IMPROVEMENT TRACKING
+================================================================================
+
+Simulating 3 sessions over 2 weeks...
+✓ Session 1 recorded (14 days ago)
+✓ Session 2 recorded (7 days ago)
+✓ Session 3 recorded (today)
+
+--------------------------------------------------------------------------------
+IMPROVEMENT ANALYSIS:
+--------------------------------------------------------------------------------
+
+Time Period:          30 days
+Sessions Analyzed:    5
+Overall Score:        100.0
+Trend:                IMPROVING
+
+--------------------------------------------------------------------------------
+STAT-BY-STAT IMPROVEMENTS:
+--------------------------------------------------------------------------------
+
+Fold vs 3-Bet OOP: ✓ FIXED
+  First session:  8.00% deviation
+  Last session:   0.00% deviation
+  Change:         -8.00% (better)
+
+C-Bet Flop: ✓ FIXED
+  First session:  8.00% deviation
+  Last session:   0.00% deviation
+  Change:         -8.00% (better)
+
+Double Barrel: ✓ FIXED
+  First session:  8.00% deviation
+  Last session:   0.00% deviation
+  Change:         -8.00% (better)
+
+Fold vs C-Bet Flop: ✓ FIXED
+  First session:  8.00% deviation
+  Last session:   0.00% deviation
+  Change:         -8.00% (better)
+
+VPIP: ✓ FIXED
+  First session:  7.50% deviation
+  Last session:   0.00% deviation
+  Change:         -7.50% (better)
+
+--------------------------------------------------------------------------------
+PERSISTENT LEAKS (appear in multiple sessions):
+--------------------------------------------------------------------------------
+
+1. C-Bet Flop
+   Appeared in 4/5 sessions
+   Persistence Rate: 80%
+   Current Deviation: -8.0%
+
+2. Fold vs C-Bet Flop
+   Appeared in 4/5 sessions
+   Persistence Rate: 80%
+   Current Deviation: +8.0%
+
+3. VPIP
+   Appeared in 4/5 sessions
+   Persistence Rate: 80%
+   Current Deviation: +7.5%
+
+================================================================================
+  DEMO 5: FORMATTED LEAK REPORT
+================================================================================
+======================================================================
+LEAK DETECTION REPORT
+======================================================================
+Session Date: 2025-10-27T05:57:37.049583
+Sample Size: 250 hands
+Reliability: RELIABLE
+Total Leaks Detected: 14
+
+TOP 5 PRIORITY LEAKS:
+----------------------------------------------------------------------
+
+1. VPIP - HIGH
+   Your Value: 32.5% | GTO: 25.0% | Deviation: +7.5%
+   Priority Score: 2.17 | EV Loss: 1.12 BB/100
+
+2. Fold vs 3-Bet OOP - MEDIUM
+   Your Value: 66.0% | GTO: 58.0% | Deviation: +8.0%
+   Priority Score: 1.78 | EV Loss: 1.20 BB/100
+
+3. Fold vs 3-Bet - MEDIUM
+   Your Value: 62.0% | GTO: 55.0% | Deviation: +7.0%
+   Priority Score: 1.76 | EV Loss: 1.05 BB/100
+
+4. Fold vs 3-Bet IP - MEDIUM
+   Your Value: 58.0% | GTO: 52.0% | Deviation: +6.0%
+   Priority Score: 1.74 | EV Loss: 0.90 BB/100
+
+5. C-Bet Flop - MEDIUM
+   Your Value: 52.0% | GTO: 60.0% | Deviation: -8.0%
+   Priority Score: 1.68 | EV Loss: 1.20 BB/100
+
+
+RECOMMENDATIONS:
+----------------------------------------------------------------------
+
+1. VPIP (HIGH)
+   Tighten starting hand ranges. Review hand selection charts for your position.
+   EV Impact: 1.12 BB/100
+
+2. Fold vs 3-Bet OOP (MEDIUM)
+   Tighten OOP defense vs 3-bets. Position disadvantage requires more discipline.
+   EV Impact: 1.20 BB/100
+
+3. Fold vs 3-Bet (MEDIUM)
+   Review your 3-bet calling ranges. May be calling too wide or folding too much.
+   EV Impact: 1.05 BB/100
+
+4. Fold vs 3-Bet IP (MEDIUM)
+   Optimize IP defense vs 3-bets. Can defend wider in position.
+   EV Impact: 0.90 BB/100
+
+5. C-Bet Flop (MEDIUM)
+   Optimize flop c-bet frequency based on board texture and position.
+   EV Impact: 1.20 BB/100
+
+======================================================================
+
+================================================================================
+  DEMO COMPLETE
+================================================================================
+
+✅ All analysis features demonstrated successfully!
+
+Features shown:
+  1. GTO Comparison - Compare stats against optimal baselines
+  2. Leak Detection - Identify and prioritize leaks
+  3. Study Plans - Generate personalized study tasks
+  4. Improvement Tracking - Monitor progress over time
+  5. Formatted Reports - Professional leak reports
+
+Next steps:
+  - Parse your hand history files
+  - Calculate your actual stats
+  - Run leak detection on your data
+  - Follow the study plan to improve!
+
