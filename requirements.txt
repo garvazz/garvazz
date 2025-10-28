@@ -7,6 +7,11 @@ xlsxwriter>=3.0.2
 # Visualization
 matplotlib>=3.4.3
 seaborn>=0.11.2
+plotly>=5.0.0
+
+# Web Application
+streamlit>=1.28.0
+streamlit-aggrid>=0.3.4
 
 # Testing
 pytest>=6.2.5
